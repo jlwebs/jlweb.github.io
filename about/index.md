@@ -4,6 +4,7 @@ title: 关于本人
 tags: [about, Jekyll, theme, moon]
 date: 2016-03-21
 comments: false
+feature: http://jlwebs.github.io/assets/img/about.jpeg
 ---
     
 <center>欢迎来到 <a href="http://jlwebs.github.io/"><b>Neteen Blog</b></a> 万籁俱寂，犹忆烟华.</center>
