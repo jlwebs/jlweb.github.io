@@ -9,8 +9,7 @@ background:         'assets/img/placeholder-big2.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://jlwebs.github.io
-comments_provider: disqus
-disqus_username: %neteen-blog%
+comments_provider: liver
 
 # Jekyll
 permalink:          /:title/
