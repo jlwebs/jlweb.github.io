@@ -1,37 +1,24 @@
 ---
 layout: page
-title: About the Theme
+title: 关于本人
 tags: [about, Jekyll, theme, moon]
 date: 2016-03-21
 comments: false
 ---
     
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+<center>欢迎来到 <a href="http://jlwebs.github.io/"><b>Neteen Blog</b></a> 万籁俱寂，犹忆烟华.</center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+## 简介
+* JLWEB 呃，这就是我吧，或者叫我 neteen，江湖行走，一蓑衣一铁鞋
+* 不知道什么时候，我竟然从毫无生命力的编码中感受到了纯粹的快乐，也许就是这一刻吧，从此走上不归路，寻找那些最初的快乐吧，希望有一天谁能记起这个博客分享的点滴 说，嘿，我以前看过一个好玩的博客，那我的记录就更有意义了。
+* 
 
-## Preview
+## 目前工程
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+bffglasses
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+See a [live version ](https://gitee.com/bffcode/bffglasses) 
 
-## Getting Started
-
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
+## 我的网站
       
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+[Visit it](https://neteen.online/){: .btn}
