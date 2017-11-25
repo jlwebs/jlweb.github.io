@@ -1,6 +1,5 @@
 ﻿---
 layout: compress
-comments: true
 ---
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -37,12 +36,9 @@ comments: true
                 <div class="entry-meta">
                 {% include meta.html %}
                 </div>
-	
             </div>
         </div>
-        {% if page.comments and site.disqus_shortname %}
-
-        
+        {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp">
 <div id="lv-container" data-id="city" data-uid="MTAyMC8zMTk5MC84NTU0">
 <script type="text/javascript">
    (function(d, s) {
@@ -59,9 +55,12 @@ comments: true
 </script>
 <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
 </div> 
-            
->>>>>>> 4cd2ea0b8f450a0210416bdffa42b76563f175ed
+</section>{% endif %}
+    </header>
+    {% include scripts.html %}
+    {% if site.mathjax == true %}
+    <!-- MathJax -->
+    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% endif %}
-       
 </body>
 </html>
