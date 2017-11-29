@@ -879,7 +879,7 @@ pre.highlight {
 	-moz-perspective-origin: 50% 200%;
 	perspective-origin: 50% 200%;
 	height: 160%;
-	max-width: 400px;
+	max-width: 250px;
 	  overflow: hidden;
 }
 
@@ -887,7 +887,7 @@ pre.highlight {
 	.dl-menuwrapper {
 		position: fixed;
 		
-		height: 800px;
+		
 	
 	}
 }
@@ -983,20 +983,24 @@ pre.highlight {
 
 .dl-menuwrapper li p {
 	margin: 0;
-	padding: 15px 20px;
+	padding: 7px 20px;
 	font-size: 14px;
 	font-size: .875rem;
 	color: rgba(255, 255, 255, 0.8);
 	font-weight: 300
 }
-
+.dl-submenu img{
+	width: 100%;
+}
 .dl-menuwrapper li p a {
 	display: inline;
 	padding: 0;
 	font-size: 14px;
 	font-size: .875rem
 }
-
+.dl-submenu li a span{
+	display: inline;
+}
 .dl-menuwrapper li a {
 	display: block;
 	position: relative;
