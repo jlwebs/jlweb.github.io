@@ -1,4 +1,4 @@
-﻿
+
 
 .row {
 	margin-top: 15px;
@@ -867,7 +867,7 @@ pre.highlight {
 }
 
 .dl-menuwrapper {
-	width: 100%;
+	width: 140%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -877,13 +877,15 @@ pre.highlight {
 	perspective: 1000px;
 	-webkit-perspective-origin: 50% 200%;
 	-moz-perspective-origin: 50% 200%;
-	perspective-origin: 50% 200%
+	perspective-origin: 50% 200%;
+	height: 160%;
 }
 
 @media only screen and (min-width: 48em) {
 	.dl-menuwrapper {
 		position: fixed;
-		max-width: 175px;
+		
+		height: 800px;
 	
 	}
 }
@@ -1042,7 +1044,7 @@ pre.highlight {
 	width: 100%;
 	max-width: 400px;
 	overflow-y: auto;
-	max-height: 600px;
+	max-height: 1000px;
 	opacity: 0;
 	pointer-events: none;
 	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
@@ -1071,7 +1073,8 @@ pre.highlight {
 		-webkit-background-clip: padding-box;
 		-moz-background-clip: padding;
 		background-clip: padding-box;
-		max-height: 650px
+		max-height: 900px;
+		
 	}
 }
 
@@ -5088,7 +5091,7 @@ screen and (max-height: 300px) {
 	.mfp-img-mobile .mfp-close {
 		top: 0;
 		right: 0;
-		width: 35px;
+		width: 350px;
 		height: 35px;
 		line-height: 35px;
 		background: rgba(0, 0, 0, 0.6);
@@ -5100,8 +5103,8 @@ screen and (max-height: 300px) {
 
 @media all and (max-width: 900px) {
 	.mfp-arrow {
-		-webkit-transform: scale(0.75);
-		transform: scale(0.75)
+		-webkit-transform: scale(1);
+		transform: scale(1)
 	}
 	.mfp-arrow-left {
 		-webkit-transform-origin: 0;
