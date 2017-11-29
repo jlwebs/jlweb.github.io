@@ -879,6 +879,8 @@ pre.highlight {
 	-moz-perspective-origin: 50% 200%;
 	perspective-origin: 50% 200%;
 	height: 160%;
+	max-width: 400px;
+	  overflow: hidden;
 }
 
 @media only screen and (min-width: 48em) {
@@ -1053,7 +1055,10 @@ pre.highlight {
 	transform: translateY(10px);
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
-	backface-visibility: hidden
+	backface-visibility: hidden;
+	    overflow-y:visible;
+	    overflow-x:visible ;
+	  
 }
 
 @media only screen and (min-width: 48em) {
