@@ -75,7 +75,7 @@ _等同于命令：jekyll build --source _source --destination _deploy_
 
 jekyll使用Liquid语言
 
-Liquid语言使用2种标记（Output和Tag）：Output： { {content } }，Tag：\{% content %\}
+Liquid语言使用2种标记（Output和Tag）：Output： { {content } }，Tag：{ % content % }
 
 Liquid过滤器：将左边字符串通过过滤器得到想要的结果并输出。
 
