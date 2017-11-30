@@ -79,10 +79,9 @@ Liquid语言使用2种标记（Output和Tag）：Output：{{content}}，Tag：{%
 
 Liquid过滤器：将左边字符串通过过滤器得到想要的结果并输出。
 
-<div class="image-package">
 ![](http://upload-images.jianshu.io/upload_images/1416611-0139bdb4ca40bbe0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<div class="image-caption">过滤器示例</div>
-</div>
+过滤器示例
+
 
 Liquid的标准过滤器：
 > date - 格式化日期
@@ -188,11 +187,9 @@ jekyll新增标签：
 
 引用图片或其他资源：新建一个文件夹存放，在博文中的引用方式：{{site.url}}表示站点的根目录
 
-<div class="image-package">
+
 ![](http://upload-images.jianshu.io/upload_images/1416611-bd1d86500ad87f04.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<div class="image-caption">
-</div>
-</div>
+
 
 其他的资源引用也是一样的。
 
@@ -200,10 +197,8 @@ jekyll新增标签：
 
 一个简单的例子，使用的是Liquid模板语言。
 
-<div class="image-package">
 ![](http://upload-images.jianshu.io/upload_images/1416611-8b37bd5ed660a438.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<div class="image-caption">创建目录</div>
-</div>
+
 
 ### 6、分页
 
@@ -241,4 +236,6 @@ http://jekyll.bootcss.com/docs/github-pages/
 > 
 > git  push  origin  master         #线上的站点是部署在master下面的
      
-转载自 [简书](http://www.jianshu.com/p/31b0ee513fdf)
+## 
+
+## *转载自 [简书](http://www.jianshu.com/p/31b0ee513fdf)* ## ##
