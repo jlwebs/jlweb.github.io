@@ -36,7 +36,7 @@ _config.yml：用于保存配置。（jekyll会自动加载这些配置）
 
 _includes文件夹：存放可以重复利用的文件，可以被其他的文件包含（方法：{% include 文件名 %}）
 
-_layouts文件夹：存放模板文件（标签{{ content }}将content插入页面中）。
+_layouts文件夹：存放模板文件（标签\{{ content \}}将content插入页面中）。
 
 _posts文件夹：存放实际的博客文章内容（文件名格式：年-月-日-标题.md）。
 
@@ -75,7 +75,7 @@ _等同于命令：jekyll build --source _source --destination _deploy_
 
 jekyll使用Liquid语言
 
-Liquid语言使用2种标记（Output和Tag）：Output：{{content}}，Tag：{% content %}
+Liquid语言使用2种标记（Output和Tag）：Output： { {content } }，Tag：\{% content %\}
 
 Liquid过滤器：将左边字符串通过过滤器得到想要的结果并输出。
 
@@ -168,9 +168,9 @@ jekyll新增的过滤器：
 > 
 > date_to_long_string - 日期转化为长格式
 > 
-> number_of_words - 统计字数（{{ page.content | number_of_words }}）
+> number_of_words - 统计字数（{ { page.content | number_of_words } }）
 > 
-> array_to_sentence_string - 数组转换为句子（列举标签时：{{ page.tags | array_to_sentence_string }}）
+> array_to_sentence_string - 数组转换为句子（列举标签时：{ { page.tags | array_to_sentence_string } }）
 > 
 > markdownify - 将makedown格式字符串转换成HTML
 > 
