@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "一起来用Jekyll!"
-date:   2017-11-24 12:52:56 +0800
+date:   2017-10-24 12:52:56 +0800
 categories: jekyll update
 feature: http://jlwebs.github.io/assets/img/about.jpeg
 ---
