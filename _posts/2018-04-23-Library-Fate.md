@@ -4,7 +4,7 @@ title: Wechat - Library Fate
 date: '2018-04-22T00:00:00.000Z'
 excerpt: 来一次说干就干的微信小程序吧——莱布瑞之缘（Library Fate）
 tags: 微信 小程序 library Fate
-feature: 'http://jlwebs.github.io/assets/img/5.jpg'
+feature: 'http://jlwebs.github.io/img/5.jpg'
 categories: ''
 ---
 #### Why not make a no-delay trip on programming with wechat application?Library Fate!
