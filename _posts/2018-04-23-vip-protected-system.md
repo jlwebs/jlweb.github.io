@@ -1,7 +1,7 @@
 ---
 title: VIP系统网络验证
 layout: post
-tags: '网络验证, VIP, php, 微信'
+tags: '网络验证,VIP,php,微信'
 categories: ''
 comments: 'true'
 ---
