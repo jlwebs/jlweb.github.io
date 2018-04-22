@@ -2,8 +2,8 @@
 layout: post
 title: Wechat - Library Fate
 date: '2018-04-22T00:00:00.000Z'
-excerpt: 曾经那么远，却还是得与你相处——数据
-tags: '微信, 小程序, library, Fate'
+excerpt: 来一次说干就干的微信小程序吧——莱布瑞之缘（Library Fate）
+tags: 微信 小程序 library Fate
 feature: ''
 categories: ''
 ---
