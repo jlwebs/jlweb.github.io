@@ -3,7 +3,7 @@ layout: post
 title: SQL入门（1）45经典题入门
 date: '2018-04-22T00:00:00.000Z'
 excerpt: 曾经那么远，却还是得与你相处——数据
-tags: '数据库, SQL, 入门'
+tags: 数据库 SQL 入门
 comments: 'true'
 feature: 'http://jlwebs.github.io/assets/img/thumb.jpeg'
 categories: ''
