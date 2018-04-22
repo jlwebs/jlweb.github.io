@@ -1,7 +1,9 @@
 ---
 title: VIP系统网络验证
 layout: post
-tags: '网络验证,VIP,php,微信'
+tags: '网络验证, VIP, php, 微信'
+categories: ''
+comments: 'true'
 ---
 1.预估到了大客户的到来，前阵子脚本需要更新VIP录入机制了，因为用的是时间戳取部分特定格式MD5转码后取前几位本地判断。
 弊端：容易在一段时间内反复激活软件
