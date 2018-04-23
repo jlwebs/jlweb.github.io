@@ -21,7 +21,7 @@ comments: 'true'
   
 4.重点就来了，验证要引入secret，而一个secret同时只有一个设备使用，这不是很像Session吗?于是温习一遍Session：
   
-### __ session 会话，是为了解决HTTP协议无状态（stateless），由于Basic auth单点认证频繁提交用户名密码敏感数据，存在潜在不安全因素，使用sessionID作为代替用户名密码
+###  session 会话，是为了解决HTTP协议无状态（stateless），由于Basic auth单点认证频繁提交用户名密码敏感数据，存在潜在不安全因素，使用sessionID作为代替用户名密码
  的通行证，举个例子，指纹支付代替输入支付密码。__
    
 我们来看看cookie有什么？
@@ -50,6 +50,7 @@ comments: 'true'
 第7行为创建时间的低位  
 第8行为创建时间的高位  
 第9行固定为 * ，表示一节的结束
+
 
 
 一个文件可能包含有多个节，按上面的格式循环即可
