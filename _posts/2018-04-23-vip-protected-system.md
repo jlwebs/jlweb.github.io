@@ -6,6 +6,7 @@ categories: ''
 comments: 'true'
 ---
 1.预估到了大客户的到来，前阵子脚本需要更新VIP录入机制了，因为用的是时间戳取部分特定格式MD5转码后取前几位本地判断。
+
 弊端：容易在一段时间内反复激活软件
 改进A:加入设备ID,MAC地址，IP限制判断。
 改进B:高端GPS和网络定位一定时间地区只允许激活一个设备
@@ -21,8 +22,9 @@ comments: 'true'
 
 4.重点就来了，验证要引入secret，而一个secret同时只有一个设备使用，这不是很像Session吗?于是温习一遍Session：
 
- session 会话，是为了解决HTTP协议无状态（stateless），由于Basic auth单点认证频繁提交用户名密码敏感数据，存在潜在不安全因素，使用sessionID作为代替用户名密码
- 的通行证，举个例子，指纹支付代替输入支付密码。
+### __ session 会话，是为了解决HTTP协议无状态（stateless），由于Basic auth单点认证频繁提交用户名密码敏感数据，存在潜在不安全因素，使用sessionID作为代替用户名密码
+ 的通行证，举个例子，指纹支付代替输入支付密码。__
+
  
 我们来看看cookie有什么？
 
@@ -68,9 +70,11 @@ ssion.name:这个就是SessionID储存的变量名称，可能是Cookie来传递
 
     console.log(document.cookie)
 
+如下
+
+>_octo=GH1.1.2131036791.1504607001; _ga=GA1.2.1713614033.1504607001; tz=Asia%2FShanghai
+
 却拿不到关键的几个cookie，如sessionID 和 ServerSameSessionID
 原来是每个对应cookie后端可以设置setHttpOnly（true），可以防止跨站脚本SESSION状态偷取，如下语句。
 
     cookie.setHttpOnly(true)
-
->_octo=GH1.1.2131036791.1504607001; _ga=GA1.2.1713614033.1504607001; tz=Asia%2FShanghai
