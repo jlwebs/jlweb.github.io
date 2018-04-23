@@ -40,6 +40,7 @@ comments: 'true'
     2450715067
     30598668
     *
+    
 ###### 其中
 第1行为 Cookie 名称
 第2行是 Cookie 的值
@@ -60,10 +61,9 @@ ssion.name:这个就是SessionID储存的变量名称，可能是Cookie来传递
 我们看看服务端session如何储存的，session是由你的浏览器保存的，有着特定的数据格式，而且安全性高的浏览器还会对文件加权限，和其他cookies数据分离储存。
 
      hello|i:123;word|i:456;
+     
  权力全在服务端，无需加密，随用随调取
-
- ![Image Title](./img/6.png)
-
+ ![Image Title](../img/6.png)
  但是console访问
 
     console.log(document.cookie)
