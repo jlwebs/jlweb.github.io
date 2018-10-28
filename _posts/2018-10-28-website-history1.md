@@ -7,10 +7,10 @@ tag:
 - ruby
 layout: post
 comments: true
-excerpt: 无干货，纯记录
+excerpt: ":yum:干货少，纯记录"
 ---
 
-:yum:**干货少，纯记录**
+**干货少，纯记录**
 # 网站点滴
 
 最近网站域名到期了，但是续费高达60+Dollar，
