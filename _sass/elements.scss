@@ -103,7 +103,10 @@ hr {
 		background-image: -o-linear-gradient(left, $color_gallery, $color_stack, $color_gallery);
 	}
 }
-
+img.emoji{
+	width: 48;
+	height: 48;
+}
 // images and figures
 img {
     // display: block;
