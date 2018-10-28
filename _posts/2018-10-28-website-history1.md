@@ -7,7 +7,10 @@ tag:
 - ruby
 layout: post
 comments: true
-excerpt: ":yum:干货少，纯记录"
+excerpt: |-
+  :yum:干货少，纯记录
+   1. 过期续费Transfer
+   2. Jemoji自定义
 ---
 
 **干货少，纯记录**
