@@ -40,28 +40,28 @@ layout: compress
                 </div>
             </div>
         </div>
-        {% if page.comments %} 
+        <!-- {% if page.comments %}  -->
          <!-- Gitalk 评论 start  -->
-        <div id="gitalk-container"></div>
-            <script type="text/javascript">
-            var title = location.pathname.substr(0, 50);//截取路径的前50个字符作为标识符
-            var gitalk = new Gitalk({
-      
-            // gitalk的主要参数
-                clientID: `d37d2a254c1f653c9c00 `,
-                clientSecret: `c19c83f980e2e251cf678b5ea47c39db9a159a84`,
-                repo: `jlwebs.github.io`,
-                owner: 'jlweb',
-                admin: ['jlwebs'],
-                id: title,//因为这里不能超过50字符，所以做了处理，当超过50时自动截取前50
-           
-            });
-            gitalk.render('gitalk-container');
-            </script>
-        <!-- Gitalk end -->
-        {% endif %}
-    </header>
 
+        <!-- Gitalk end -->
+        <!-- {% endif %} -->
+    </header>
+        <div id="gitalk-container"></div>
+        <script type="text/javascript">
+        var title = location.pathname.substr(0, 50);//截取路径的前50个字符作为标识符
+        var gitalk = new Gitalk({
+    
+        // gitalk的主要参数
+            clientID: `d37d2a254c1f653c9c00 `,
+            clientSecret: `c19c83f980e2e251cf678b5ea47c39db9a159a84`,
+            repo: `jlwebs.github.io`,
+            owner: 'jlweb',
+            admin: ['jlwebs'],
+            id: title,//因为这里不能超过50字符，所以做了处理，当超过50时自动截取前50
+        
+        });
+        gitalk.render('gitalk-container');
+        </script>
 
     {% include scripts.html %}
     {% if site.mathjax == true %}
