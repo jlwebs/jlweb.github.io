@@ -1,17 +1,15 @@
 {% if site.disqus_shortname %}
-    <script type="text/javascript">
-        var disqus_shortname = 'jlweb-blog';
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-        (function () {
-            var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script>
+<script type="text/javascript">
+    var title = location.pathname.substr(0, 50);
+    var gitalk = new Gitalk({
+        clientID: `d37d2a254c1f653c9c00 `,
+        clientSecret: `c19c83f980e2e251cf678b5ea47c39db9a159a84`,
+        repo: `jlwebs.github.io`,
+        owner: 'jlweb',
+        admin: ['jlwebs'],
+        id: title,
+    });
+    gitalk.render('gitalk-container');
+</script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% endif %}

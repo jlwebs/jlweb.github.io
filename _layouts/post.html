@@ -54,20 +54,6 @@ layout: compress
     <!-- MathJax -->
     <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% endif %}
-        <script type="text/javascript">
-        var title = location.pathname.substr(0, 50);
-        var gitalk = new Gitalk({
-    
-        // gitalk的主要参数
-            clientID: `d37d2a254c1f653c9c00 `,
-            clientSecret: `c19c83f980e2e251cf678b5ea47c39db9a159a84`,
-            repo: `jlwebs.github.io`,
-            owner: 'jlweb',
-            admin: ['jlwebs'],
-            id: title,//因为这里不能超过50字符，所以做了处理，当超过50时自动截取前50
-        
-        });
-        gitalk.render('gitalk-container');
-        </script>
+
 </body>
 </html>
