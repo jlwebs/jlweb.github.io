@@ -1,5 +1,5 @@
 # Site
-title:              Neteen Blog
+title:              jlweb Blog
 bio:                'Notes of My Code Journey'
 description:        "occupied with moon theme of jelly"
 reading_time:       true
@@ -8,7 +8,7 @@ logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big2.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://blog.neteen.online
+url:                https://blog.970909.xyz
 comments_provider: liver
 
 # Jekyll
