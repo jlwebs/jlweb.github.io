@@ -2,11 +2,11 @@
 <script type="text/javascript">
     var title = location.pathname.substr(0, 50);
     var gitalk = new Gitalk({
-        clientID: `d37d2a254c1f653c9c00 `,
+        clientID: `d37d2a254c1f653c9c00`,
         clientSecret: `c19c83f980e2e251cf678b5ea47c39db9a159a84`,
         repo: `jlwebs.github.io`,
         owner: 'jlwebs',
-        admin: ['jlwebs'],
+        admin: 'jlwebs',
         id: title,
     });
     gitalk.render('gitalk-container');
