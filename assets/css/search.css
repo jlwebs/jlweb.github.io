@@ -97,12 +97,13 @@
     user-select: none;
     display: block;
     color: #222;
-    right: 50px;
-    position: absolute;
-    margin-top: 3px;
+    right: -9%;
+    position: relative;
+    float: right;
 }
 
 .search-icon-2.post{
+    float: right;
     height: 100%;
     margin: 0 10px;
     line-height: 30px;
@@ -110,9 +111,8 @@
     user-select: none;
     display: block;
     color: #222;
-    right: 17.5%;
-    position: absolute;
-    margin-top: 3px;
+    right: -9%;
+    position: relative;
 }
 
 
