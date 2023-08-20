@@ -122,7 +122,7 @@
     cursor: pointer;
 }
 
-.search-icon-2{
+.search-icon-2 {
     height: 100%;
     margin: 0 10px;
     line-height: 30px;
@@ -130,9 +130,10 @@
     user-select: none;
     display: block;
     color: #222;
-    right: -9%;
+    right: -30%;
     position: relative;
     float: right;
+    top: 4px;
 }
 
 .search-icon-2.post {
