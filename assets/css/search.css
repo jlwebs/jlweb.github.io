@@ -5,7 +5,7 @@
     text-align: right;
     line-height: 30px;
     padding-right: 10px;
-    opacity: 0.6;
+    opacity: 0.8;
     position: relative;
     z-index: 999;
     top: 3%;
@@ -54,7 +54,7 @@
 
 .search .search-results .result-item {
 /*    background: aqua;*/
-    color: #000;
+    color: #0e07018a;;
     margin: 5px;
     padding: 3px;
     color: white;
@@ -72,6 +72,7 @@
     color: #222;
     right: 50px;
     position: absolute;
+    margin-top: 3px;
 }
 
 .hoverable {
@@ -79,6 +80,11 @@
     transition: -webkit-box-shadow .25s;
     transition: box-shadow .25s;
     transition: box-shadow .25s, -webkit-box-shadow .25s;
+}
+
+.hoverable:hover {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .result-title{
