@@ -21,7 +21,7 @@
     /* opacity: 0.8; */
 }
 
-.search .search-icon .post {
+.search .search-icon.post {
     float: right;
     height: 100%;
     margin: 0 10px;
@@ -45,7 +45,7 @@
     box-sizing: border-box;
 }
 
-.search .search-input .post {
+.search .search-input.post {
     float: right;
     width: 20%;
     height: 30px;
@@ -102,7 +102,7 @@
     margin-top: 3px;
 }
 
-.search-icon-2 .post{
+.search-icon-2.post{
     height: 100%;
     margin: 0 10px;
     line-height: 30px;
