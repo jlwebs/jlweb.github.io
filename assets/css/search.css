@@ -14,7 +14,7 @@
 .search.post {
     position: revert;
     color: #222;
-    height: 20px;
+    /* height: 20px; */
     text-align: right;
     line-height: 30px;
     padding-right: 10px;
