@@ -103,5 +103,8 @@
 
 		<li><a href="//neteen.online?s="旧电脑上没有上传主站page">主站</a></li></ul><!-- /.dl-menu -->
 	</nav><!-- /.dl-menuwrapper -->
-
+    {% if page.url == "/" ||  page.url == "/index" %}
     {% include search.html %}
+    {% else %}
+    {% include search-post.html %}
+    {% endif %}

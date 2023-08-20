@@ -18,6 +18,18 @@
     line-height: 30px;
     cursor: pointer;
     user-select: none;
+    opacity: 0.8;
+}
+
+.search .search-icon-post {
+    float: right;
+    height: 100%;
+    margin: 0 10px;
+    line-height: 30px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    right: 12%;
 }
 
 .search .search-input {
@@ -33,6 +45,21 @@
     box-sizing: border-box;
 }
 
+.search .search-input-post {
+    float: right;
+    width: 20%;
+    height: 30px;
+    color: #222;
+    /* background-color: black; */
+    line-height: 30px;
+    margin: 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    right: 12%;
+    position: relative;
+}
+
 .search .search-results {
     display: block;
     z-index: 1000;
@@ -45,7 +72,7 @@
     text-align: left;
     border-radius: 5px;
 /*    background: #ccc;*/
-    background: #0d1d33c4;;
+    background: #0d1d33d6;;
     box-shadow: 0 .3rem .5rem #333;
 }
 .card {
@@ -53,7 +80,7 @@
 }
 
 .search .search-results .result-item {
-    background: #00000038;
+    background: #08070294;
     color: #0e07018a;;
     margin: 5px;
     padding: 3px;
@@ -74,6 +101,20 @@
     position: absolute;
     margin-top: 3px;
 }
+
+.search-icon-2-post{
+    height: 100%;
+    margin: 0 10px;
+    line-height: 30px;
+    cursor: pointer;
+    user-select: none;
+    display: block;
+    color: #222;
+    right: 17.5%;
+    position: absolute;
+    margin-top: 3px;
+}
+
 
 .hoverable {
     -webkit-transition: -webkit-box-shadow .25s;
