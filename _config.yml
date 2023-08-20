@@ -29,6 +29,10 @@ sass:
 # Comments
 disqus_shortname:   taylantatli
 
+# Search 
+search:
+  provider: custom # "default" (default), false, "google", "custom"
+  
 # Social
 # if you don't have any of social below, comment the line.
 #google:
