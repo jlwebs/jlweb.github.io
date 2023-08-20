@@ -170,7 +170,7 @@ function searchMatching(arrTitles, arrContents, input) {
   var totalDiv = tmpDiv.cloneNode(true);
 
   totalDiv.className = 'result-title';
-  totalDiv.innerHTML = '总匹配：<b>' + indexItem.length + '</b> 项';
+  totalDiv.innerHTML = ' &#x23EC 总匹配：<b>' + indexItem.length + '</b> 项';
   elSearchResults.appendChild(totalDiv);
 
   // 未匹配到内容的情况
