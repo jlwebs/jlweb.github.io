@@ -22,7 +22,7 @@
     position: relative;
     z-index: 999;
     top: 3%;
-    right: 15%;
+    right: -5%;
 }
 
 .search .search-icon {

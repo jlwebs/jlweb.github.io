@@ -106,5 +106,8 @@
     {% if page.url == "/" ||  page.url == "/index" %}
     {% include search.html %}
     {% else %}
-    {% include search-post.html %}
+    <link rel="stylesheet" type="text/css" href="/assets/css/search.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script async src="/assets/js/search.js"></script>
+    <!-- {% include search-post.html %} -->
     {% endif %}
