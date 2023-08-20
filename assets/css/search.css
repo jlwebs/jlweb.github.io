@@ -1,10 +1,11 @@
 .search {
     position: revert;
-    color: orange;
-    height: 350px;
+    color: #222;
+    /* height: 350px; */
     text-align: right;
     line-height: 30px;
     padding-right: 10px;
+    opacity: 0.6;
 }
 
 .search .search-icon {
@@ -20,8 +21,8 @@
     float: right;
     width: 30%;
     height: 30px;
-    color: orange;
-    background-color: black;
+    color: #f6f7f9;
+    /* background-color: black; */
     line-height: 30px;
     margin: 0;
     border: 2px solid #ddd;
@@ -55,4 +56,11 @@
     color: white;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.search-icon-2{
+    display: block;
+    color: white;
+    right: 50px;
+    position: absolute;
 }
