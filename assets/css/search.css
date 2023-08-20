@@ -6,6 +6,9 @@
     line-height: 30px;
     padding-right: 10px;
     opacity: 0.6;
+    position: relative;
+    z-index: 999;
+    top: 3%;
 }
 
 .search .search-icon {
@@ -21,7 +24,7 @@
     float: right;
     width: 30%;
     height: 30px;
-    color: #f6f7f9;
+    color: #222;
     /* background-color: black; */
     line-height: 30px;
     margin: 0;
@@ -42,6 +45,7 @@
     text-align: left;
     border-radius: 5px;
 /*    background: #ccc;*/
+    background: #0d1d33c4;;
     box-shadow: 0 .3rem .5rem #333;
 }
 .card {
@@ -59,8 +63,38 @@
 }
 
 .search-icon-2{
+    height: 100%;
+    margin: 0 10px;
+    line-height: 30px;
+    cursor: pointer;
+    user-select: none;
     display: block;
-    color: white;
+    color: #222;
     right: 50px;
     position: absolute;
 }
+
+.hoverable {
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+}
+
+.result-title{
+    color:wheat;
+}
+
+.card-content .result-item-title{
+    color: black;
+    font-weight: bold;
+}
+
+.blue-text {
+    color: #2196F3 !important;
+}
+
+/* 隐藏 WebKit 浏览器滚动条 */
+::-webkit-scrollbar {
+    width: 0px;
+  }
