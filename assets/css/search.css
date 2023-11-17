@@ -29,7 +29,7 @@
     float: right;
     height: 100%;
     margin: 0 10px;
-    line-height: 30px;
+    line-height: 20px;
     cursor: pointer;
     user-select: none;
     /* opacity: 0.8; */
@@ -39,7 +39,7 @@
     float: right;
     height: 100%;
     margin: 0 10px;
-    line-height: 30px;
+    line-height: 20px;
     cursor: pointer;
     user-select: none;
     position: relative;
@@ -52,7 +52,7 @@
     height: 30px;
     color: #222;
     /* background-color: black; */
-    line-height: 30px;
+    line-height: 20px;
     margin: 0;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -125,7 +125,7 @@
 .search-icon-2 {
     height: 100%;
     margin: 0 10px;
-    line-height: 30px;
+    line-height: 20px;
     cursor: pointer;
     user-select: none;
     display: block;
@@ -145,7 +145,7 @@
     user-select: none;
     display: block;
     color: #222;
-    right: -30%;
+    right: -29%;
     position: relative;
     top: 0px;
     font-size: 15px;
