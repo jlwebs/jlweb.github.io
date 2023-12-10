@@ -17,8 +17,8 @@ comments: true
 - 并发监控数量
    - 简单通过线性机器池和自定义业务逻辑完成异常与正常的判断，在本地网络测试模拟多台机器下是否正常使用，由于远程调用依赖网络，这里本地测试模拟简易情况并发量，本地受限于进程占用内存，因此只简单测试了几百台机器（进程）
 ###### 2.工作流程
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/26575180/1694625458510-02dcda41-90ff-43bd-bb6a-27563d5a704e.png#averageHue=%23fbfbfb&clientId=u552a0c5e-a1df-4&from=paste&height=242&id=u5a19916b&originHeight=920&originWidth=1463&originalType=binary&ratio=2.879999876022339&rotation=0&showTitle=false&size=113557&status=done&style=none&taskId=u6af22f0b-1dbc-411f-bd85-7c43d7ea24e&title=&width=384.98614501953125)
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/26575180/1694657477329-ea83380b-26e6-4819-a4f0-39bed0f4f397.png#averageHue=%23f7e8cb&clientId=u0aa4ed35-ef71-4&from=paste&height=222&id=uc5ecdb24&originHeight=739&originWidth=1467&originalType=binary&ratio=2.879999876022339&rotation=0&showTitle=false&size=481162&status=done&style=none&taskId=u7d945977-3c83-4033-b2ff-b6f228bf6b1&title=&width=440.3750305175781)
+![image.png]({{site.baseurl}}/images\1694625458510-02dcda41-90ff-43bd-bb6a-27563d5a704e.png)
+![image.png]({{site.baseurl}}/images\1694657477329-ea83380b-26e6-4819-a4f0-39bed0f4f397.png)
  
 ###### 3.面试问题
 
@@ -32,7 +32,7 @@ comments: true
 /proc/stat           	CPU相关：计算CPU的user和sys占用率
 根据获取内容次序，组织专门结构体，用file.ReadLine和 stoll把每一行数据存入struct
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/26575180/1694768569037-7832349a-4c10-43e9-8ee7-9cacedb752d8.png#averageHue=%23fefefe&clientId=u290b1e72-5fe0-4&from=paste&height=80&id=ubf1a8138&originHeight=205&originWidth=1608&originalType=binary&ratio=2.559999942779541&rotation=0&showTitle=false&size=30462&status=done&style=none&taskId=u682740af-d23a-4ce8-a0a1-0e4aca6b4d0&title=&width=628.1250140396882)
+![image.png]({{site.baseurl}}/images\1694768569037-7832349a-4c10-43e9-8ee7-9cacedb752d8.png)
 ###### 4.grpc框架工作原理
 gRPC 是一个高性能、跨语言的远程过程调用（RPC）框架，由Google开发，基于HTTP/2协议和Protocol Buffers（protobuf）序列化协议。
 

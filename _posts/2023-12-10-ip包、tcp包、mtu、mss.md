@@ -21,7 +21,7 @@ comments: true
 
 2.IP包分片（如UDP）后如何组装回的
 基于字段“标识符”、“标志位”、“段偏移量”三位合一
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/26575180/1692166951653-561f71db-86da-4b70-8d3a-726d4226ee92.png#averageHue=%23e6e4e6&clientId=u72a71e38-1a8d-4&from=paste&id=u0a215f2f&originHeight=348&originWidth=874&originalType=url&ratio=2.5999999046325684&rotation=0&showTitle=false&size=549581&status=done&style=none&taskId=u3d64872b-d1a5-42eb-a19f-d19b246a6be&title=)
+![image.png]({{site.baseurl}}/images\1692166951653-561f71db-86da-4b70-8d3a-726d4226ee92.png)
 
 - 标志位
 
@@ -59,7 +59,7 @@ comments: true
 - 源主机收到 ICMP 消息后，会不断使用新的 MTU 发送 IP 数据包，直到 IP 数据包达到目的主机；
 
 6.DNS为什么要求512字节数据以内
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/26575180/1691988198585-fba685e5-10cb-4a90-99c5-a9bfc27077bc.png#averageHue=%23f2f0e3&clientId=ua8091143-6926-4&from=paste&id=ue0db0d46&originHeight=169&originWidth=1070&originalType=url&ratio=2.134999990463257&rotation=0&showTitle=false&size=93144&status=done&style=none&taskId=ue06b2753-b1ae-4c7a-a5e3-b5c04b581fb&title=)
+![image.png]({{site.baseurl}}/images\1691988198585-fba685e5-10cb-4a90-99c5-a9bfc27077bc.png)
 
 - 以太网帧在局域网中的MTU是1500byte，但是在非局域网环境，如：internet下的时候，MTU是各个[路由器](https://so.csdn.net/so/search?q=%E8%B7%AF%E7%94%B1%E5%99%A8&spm=1001.2101.3001.7020)进行一个配置的。所以，通常路由器默认的MTU为576字节。所以，为了适应网络环境，DNS协议在返回的数据报大于512的时候，就转化为了TCP协议。
 - 512并不是严格上界，而是考虑损耗的妥协量，最大传数据最大值应该是548=576-20-18（网络层IP数据报首部20字节，UDP报文首部8字节）

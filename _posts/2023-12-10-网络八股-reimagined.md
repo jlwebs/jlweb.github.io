@@ -7,7 +7,7 @@ tags: ['🥁-Network']
 comments: true
 ---
 
-### ![](https://cdn.nlark.com/yuque/0/2023/webp/26575180/1698037924859-408e2b35-af52-48ff-8465-f9ebc22a53d2.webp#averageHue=%23f7f7f7&clientId=u3db018a2-d123-4&from=paste&id=u11e0db0e&originHeight=655&originWidth=1440&originalType=url&ratio=2.640000104904175&rotation=0&showTitle=false&status=done&style=none&taskId=ud4bc4b76-2ae4-4535-8f9b-05ece8863d1&title=)
+### ![]({{site.baseurl}}/images\1698037924859-408e2b35-af52-48ff-8465-f9ebc22a53d2.webp)
 ### TCP三次握手过程：
 
    - 第一次握手：客户端发送一个带有 SYN 标志的数据包给服务器，表明客户端请求建立连接，并设定客户端的初始序列号。
@@ -39,7 +39,7 @@ TIME_WAIT(2MSL)1. **确保最后一个确认报文段能够到达。**如果 B �
    - 方式一：随机端口，tftpd 程序采用的是随机端口的方式。也就是说如果有一个新的客户端过来，服务器会再随机绑定一个端口号，生成一个新的socket和客户端通信。缺点：数量有限，占用端口。
    - 方式二：数据队列方式，引入三类线程分别处理listen、recv、handle；分别是监听新客户端插入新的队列；recv对已连接客户端新数据进行入队；handle，由listen后创建的线程，专一处理某客户端数据。
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/26575180/1690030935804-c2e5af68-e59e-4fcc-92f1-d2df2a9cdaff.png#averageHue=%23f4f4f4&clientId=u7416ed24-1ea0-4&from=paste&height=392&id=u1a454e8f&originHeight=1031&originWidth=1226&originalType=binary&ratio=1.75&rotation=0&showTitle=false&size=131027&status=done&style=none&taskId=u9537f7c3-6fad-4272-9df5-2c37c0fcea8&title=&width=465.57147216796875)
+![image.png]({{site.baseurl}}/images\1690030935804-c2e5af68-e59e-4fcc-92f1-d2df2a9cdaff.png)
 ### TCP首部长度，有哪些字段：
 
    - TCP 首部长度可变，最小长度为 20 字节，最大长度为 60 字节。其中常见的字段有：

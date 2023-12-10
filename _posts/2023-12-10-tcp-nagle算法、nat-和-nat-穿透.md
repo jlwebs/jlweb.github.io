@@ -31,9 +31,9 @@ if 有数据要发送 {
     }
 }
 ```
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/26575180/1692167580477-4202f57b-7fdf-4f6a-b6a3-2d08782ebce7.png#averageHue=%23fbfaf9&clientId=u7d562194-2e8d-4&from=paste&height=249&id=u4291de9f&originHeight=678&originWidth=836&originalType=url&ratio=2.5999999046325684&rotation=0&showTitle=false&size=216079&status=done&style=none&taskId=u0192b132-6092-48e2-a0f4-81de2b104d2&title=&width=307.00360107421875)
+![image.png]({{site.baseurl}}/images\1692167580477-4202f57b-7fdf-4f6a-b6a3-2d08782ebce7.png)
 #### NAT
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/26575180/1692168327277-97c8496a-cd55-4565-8a37-e38b80e6aae1.png#averageHue=%23f5f4f2&clientId=udc40968e-7f54-4&from=paste&id=ucfb04ffd&originHeight=834&originWidth=1541&originalType=url&ratio=2.5999999046325684&rotation=0&showTitle=false&size=412492&status=done&style=none&taskId=u3433bd1b-f44d-4fea-b0d1-562f67d9f81&title=)
+![image.png]({{site.baseurl}}/images\1692168327277-97c8496a-cd55-4565-8a37-e38b80e6aae1.png)
 	应用程序无感知，由NAT设备（路由器）完成内网ip+端口的NAT表转换映射并修改IP包的Source IP，以暴露在公网上。一般来说家庭网络是无法完成NAT的，因为NAT公网出口设备是在骨干网关，家庭无权设置NAT映射，这时候就需要借助NAT穿透，一种主动式暴露技术。
 相关技术还有:DMZ主机
 DMZ是将局域网中的某台主机直接暴露在互联网中，对外而言，这台主机拥有你的互联网IP，互联网所有对你公网IP的访问直接会转移到你的这台主机，而不受防火墙限制；而NAT则是通过端口隐射的方式，把局域网中的特定主机的指定端口开放给互谅网，只有当互联网访问你公网IP的指定端口的时候，这个访问才会被转移到这台主机。

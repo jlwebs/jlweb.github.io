@@ -14,7 +14,7 @@ REF：
 [深入理解 Linux 的 epoll 机制及epoll原理](https://zhuanlan.zhihu.com/p/410316787?utm_id=0)
 ###### C++14语法封装线程池是用了什么特性
 使用了可变长参数模板编程，对其进行改进，使用模板元编程方法，使得线程池可接受任意类型的函数。
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/26575180/1694654906287-eb2968f8-d325-4597-ac6f-358516c72b0b.png#averageHue=%23f9f8f7&clientId=ua574f40f-c0da-4&from=paste&height=206&id=u59699a49&originHeight=688&originWidth=1618&originalType=binary&ratio=2.879999876022339&rotation=0&showTitle=false&size=108660&status=done&style=none&taskId=ua888b097-32e9-4bf8-aaf8-b7b6efcfe72&title=&width=484.8051452636719)
+![image.png]({{site.baseurl}}/images\1694654906287-eb2968f8-d325-4597-ac6f-358516c72b0b.png)
 其中typename...Args为可变参数，可以接受任意数量的参数，通过bind函数将传入的函数f和对应的参数列表绑定为可执行对象，并通过packged_task封装为智能指针，最后通过匿名表达式包装为function<void()>类型，传入队列之中。如果先要获取执行结果，可以返回get_future，外部通过get获取结果，不然可以不返回值。
 如果不使用packged_task再次封装一层，直接使用一下形式代码则会出现执行时对象已经释放的情况，造成崩溃。而function对象又无法封装为智能指针，故需使用packged_task。
 ###### 你的webserver有什么不同之处
@@ -323,12 +323,12 @@ int epoll_wait(int epfd, struct epoll_event *events, int maxevents, int timeout)
 3. 从已就绪链表结构中，获得感兴趣事件集合
 ###### errno是否是线程安全？
 POSIX.1c（也称为POSIX.1-1996）引入了对 errno 的线程安全定义，以避免在多线程环境中产生不确定的结果。这个版本的POSIX标准确保了每个线程都有独立的错误号，从而避免了线程之间的错误信息干扰。
-![](https://cdn.nlark.com/yuque/0/2023/png/26575180/1698899598748-ad166912-7751-4236-ab61-2770ecc98c17.png#averageHue=%23f6f5f4&clientId=u59905aa9-5fdd-4&from=paste&id=u49fa2d46&originHeight=582&originWidth=1114&originalType=url&ratio=2.640000104904175&rotation=0&showTitle=false&status=done&style=none&taskId=ua5b418c0-9ab3-4362-90c1-d5d545375a7&title=)
+![]({{site.baseurl}}/images\1698899598748-ad166912-7751-4236-ab61-2770ecc98c17.png)
 [【精选】【Linux】Ⅵ多线程_由于同一进程中的多个线程共享全局数据,因此,在多线程编程中如果一个线程对全局变-CSDN博客](https://blog.csdn.net/weixin_43737259/article/details/115773538)
 ###### async和packaged_task异步编程区别
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/26575180/1698662209603-0f65ec04-3f99-4424-8ebc-9a7fbc2a58cd.png#averageHue=%23f7f3ea&clientId=u5690ee15-1a51-4&from=paste&height=170&id=u0f3f3e0e&originHeight=448&originWidth=1924&originalType=binary&ratio=2.640000104904175&rotation=0&showTitle=false&size=175570&status=done&style=none&taskId=uad5f01d3-8faf-4336-90a0-64ad2113e82&title=&width=728.7878498284515)
+![image.png]({{site.baseurl}}/images\1698662209603-0f65ec04-3f99-4424-8ebc-9a7fbc2a58cd.png)
 ###### condition_variable流程用法
-> ![image.png](https://cdn.nlark.com/yuque/0/2023/png/26575180/1699420218475-da18ae18-b568-4a77-a6ea-16ceab31c951.png#averageHue=%232c303a&clientId=ubaa79a07-5e84-4&from=paste&height=233&id=u26a3176f&originHeight=1226&originWidth=1340&originalType=binary&ratio=2.640000104904175&rotation=0&showTitle=false&size=1206494&status=done&style=none&taskId=ua1cdfbf8-64b5-4835-88e7-36b0ef69196&title=&width=254.5662841796875)![image.png](https://cdn.nlark.com/yuque/0/2023/png/26575180/1699420227014-ad6c4ab6-6042-4827-a5ab-7b1a6c3622a2.png#averageHue=%23272c36&clientId=ubaa79a07-5e84-4&from=paste&height=163&id=lP7P7&originHeight=567&originWidth=1339&originalType=binary&ratio=2.640000104904175&rotation=0&showTitle=false&size=426602&status=done&style=none&taskId=u471817f4-8906-455d-82a1-ff2f5a2647c&title=&width=385.18939208984375)
+> ![image.png]({{site.baseurl}}/images\1699420218475-da18ae18-b568-4a77-a6ea-16ceab31c951.png)![image.png]({{site.baseurl}}/images\1699420227014-ad6c4ab6-6042-4827-a5ab-7b1a6c3622a2.png)
 
 1.互斥锁 unique_lock 是针对哪里的？
 互斥量加锁为了保证**条件变化**的同步性，条件是可读写变化的，需要用上锁控制单一时间访问，然后再判断condition，如果不通过（false）则释放锁，阻塞休眠，为了其他共享cv的线程做唤醒检测；

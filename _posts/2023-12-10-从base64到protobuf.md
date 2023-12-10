@@ -13,7 +13,7 @@ comments: true
 > 这个网关很可能会对这个非ASCII码字符的二进制位做调整，即将这个非ASCII码的8位二进制码的最高位置为0。此时，用户收到的邮件将会是一封纯粹的乱码邮件，基于这个原因就产生了Base64算法。
 
 编码表：
-![](https://cdn.nlark.com/yuque/0/2023/webp/26575180/1693231365433-212eed4a-ea4e-46a5-b0bd-f2f313a3f482.webp#averageHue=%23f6f6f5&clientId=u45d9ec06-a1d1-4&from=paste&height=258&id=u98a7a820&originHeight=310&originWidth=515&originalType=url&ratio=2.4000000953674316&rotation=0&showTitle=false&status=done&style=none&taskId=u507e844f-0e23-42af-b843-e365be984b5&title=&width=429)
+![]({{site.baseurl}}/images\1693231365433-212eed4a-ea4e-46a5-b0bd-f2f313a3f482.webp)
 原来一个字节8位，划分6bits为单位解析，也就是原来3字节=24位正好解析成4个base64符号，占空间右3bytes提升到4bytes，宏观上会表现成3byte+3byte +···+ 最后一节；
 如果最后一段不是刚好6bits呢？NO，base64是按照4换3的策略来的，只要 0<最后一节<3，那就会被强行padding = 来补齐。
 举例，比如2字节数据 8+8 → 6+6+4 → 6+6+6(4个有效bits)+pad*1
@@ -29,7 +29,7 @@ comments: true
 base128是为了解决4换3字节，空间利用率只有75%的问题的，base128如果可行, 浪费率可降低到12.5%；
 > ascii里打印字符只有96个，这里会引出base128的问题，怎么够表示呢，加上非打印的控制字符一共也就128个ascii字符，虽说非打印字符也定义了对应特殊符号只是不太美观
 
-![](https://cdn.nlark.com/yuque/0/2023/png/26575180/1693238666972-5b66d693-5259-4c9a-90a0-17f9ae7d1b74.png#averageHue=%23e2e4e2&clientId=u45d9ec06-a1d1-4&from=paste&height=335&id=u1a66e202&originHeight=633&originWidth=972&originalType=url&ratio=2.4000000953674316&rotation=0&showTitle=false&status=done&style=none&taskId=uc233ad14-04b1-43f5-86d8-c65ed0e738e&title=&width=513.9973754882812)
+![]({{site.baseurl}}/images\1693238666972-5b66d693-5259-4c9a-90a0-17f9ae7d1b74.png)
 > 即使不考虑 pad需要128+1个字符，ascii 中包含了一些不可以正常打印的控制字符，编码之后的字符还可能包含会被不同操作系统转换的换行符号（10 和 13）。因此，Base 64 至今依然没有被 Base 128 替代。
 
 > Base 64 的规则因为上述限制不能完美地扩展到 Base 128，所以现有基于 Base 64 扩展而来的编码方式大部分都属于变种：如 LEB128（Little-Endian Base 128）、 Base 85 （Ascii 85），以及本文的主角：Base 128 Varints。
@@ -59,7 +59,7 @@ Protobuf针对不同数据类型以及数据范围采用策略不同，以下是
 用于对string类型编码，把长度附加在了数据头部；
 "Tag - Length - Value" 是一种常见的数据编码结构，用于在长度限定编码中传输或存储数据。这种结构在许多序列化格式中都有应用，其中每个字段的数据被编码为三个主要部分：标记（Tag）、长度（Length）和实际值（Value）。
 介绍：Tag生成规则
-![](https://cdn.nlark.com/yuque/0/2023/webp/26575180/1693248741208-222348eb-2fbe-45cf-ab71-1c3fbebf5bce.webp#averageHue=%23fcfbfb&clientId=u45d9ec06-a1d1-4&from=paste&height=323&id=u2fee5970&originHeight=562&originWidth=802&originalType=url&ratio=2.4000000953674316&rotation=0&showTitle=false&status=done&style=none&taskId=u94a8317e-999f-4056-8de0-a0343d0410c&title=&width=460.99737548828125)
+![]({{site.baseurl}}/images\1693248741208-222348eb-2fbe-45cf-ab71-1c3fbebf5bce.webp)
 举例:
 ```json
 message MyMessage {
