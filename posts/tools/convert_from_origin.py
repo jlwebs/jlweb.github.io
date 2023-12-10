@@ -5,13 +5,18 @@ from datetime import datetime
 from urllib.parse import urlparse
 
 def download_image(url, output_folder):
+    filename = os.path.basename(urlparse(url).path)
+    output_path = os.path.join(output_folder, filename)
+
+    if os.path.exists(output_path):
+        print(f"Image '{filename}' already exists. Skipping download.")
+        return f"images/{filename}"
+
     response = requests.get(url)
     if response.status_code == 200:
-        filename = os.path.basename(urlparse(url).path)
-        output_path = os.path.join(output_folder, filename)
         with open(output_path, 'wb') as file:
             file.write(response.content)
-        return output_path
+        return f"images/{filename}"
     return None
 
 def create_blog_post(filepath):
@@ -44,9 +49,9 @@ comments: true
         image_links = re.findall(r'!\[.*?\]\((.*?)\)', content)
         for link in image_links:
             if link.startswith('http'):
-                local_path = download_image(link, 'images')
+                local_path = download_image(link, os.path.join(output_folder, 'images'))
                 if local_path:
-                    content = content.replace(link, f"{{{{site.baseurl}}}}/{local_path}")
+                    content = content.replace(link, local_path)
 
     with open(new_filename, 'w', encoding='utf-8') as new_file:
         new_file.write(front_matter)
@@ -55,7 +60,7 @@ comments: true
     print(f"Created new blog post: {new_filename}")
 
 def process_directory(directory):
-    os.makedirs("output", exist_ok=True)
+    os.makedirs("output/images", exist_ok=True)
 
     for root, _, files in os.walk(directory):
         for file in files:
