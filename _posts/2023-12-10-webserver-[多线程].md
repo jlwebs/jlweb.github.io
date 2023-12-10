@@ -14,7 +14,7 @@ REF：
 [深入理解 Linux 的 epoll 机制及epoll原理](https://zhuanlan.zhihu.com/p/410316787?utm_id=0)
 ###### C++14语法封装线程池是用了什么特性
 使用了可变长参数模板编程，对其进行改进，使用模板元编程方法，使得线程池可接受任意类型的函数。
-![image.png](images/1694654906287-eb2968f8-d325-4597-ac6f-358516c72b0b.png)
+![image.png](../images/1694654906287-eb2968f8-d325-4597-ac6f-358516c72b0b.png)
 其中typename...Args为可变参数，可以接受任意数量的参数，通过bind函数将传入的函数f和对应的参数列表绑定为可执行对象，并通过packged_task封装为智能指针，最后通过匿名表达式包装为function<void()>类型，传入队列之中。如果先要获取执行结果，可以返回get_future，外部通过get获取结果，不然可以不返回值。
 如果不使用packged_task再次封装一层，直接使用一下形式代码则会出现执行时对象已经释放的情况，造成崩溃。而function对象又无法封装为智能指针，故需使用packged_task。
 ###### 你的webserver有什么不同之处
@@ -323,12 +323,12 @@ int epoll_wait(int epfd, struct epoll_event *events, int maxevents, int timeout)
 3. 从已就绪链表结构中，获得感兴趣事件集合
 ###### errno是否是线程安全？
 POSIX.1c（也称为POSIX.1-1996）引入了对 errno 的线程安全定义，以避免在多线程环境中产生不确定的结果。这个版本的POSIX标准确保了每个线程都有独立的错误号，从而避免了线程之间的错误信息干扰。
-![](images/1698899598748-ad166912-7751-4236-ab61-2770ecc98c17.png)
+![](../images/1698899598748-ad166912-7751-4236-ab61-2770ecc98c17.png)
 [【精选】【Linux】Ⅵ多线程_由于同一进程中的多个线程共享全局数据,因此,在多线程编程中如果一个线程对全局变-CSDN博客](https://blog.csdn.net/weixin_43737259/article/details/115773538)
 ###### async和packaged_task异步编程区别
-![image.png](images/1698662209603-0f65ec04-3f99-4424-8ebc-9a7fbc2a58cd.png)
+![image.png](../images/1698662209603-0f65ec04-3f99-4424-8ebc-9a7fbc2a58cd.png)
 ###### condition_variable流程用法
-> ![image.png](images/1699420218475-da18ae18-b568-4a77-a6ea-16ceab31c951.png)![image.png](images/1699420227014-ad6c4ab6-6042-4827-a5ab-7b1a6c3622a2.png)
+> ![image.png](../images/1699420218475-da18ae18-b568-4a77-a6ea-16ceab31c951.png)![image.png](../images/1699420227014-ad6c4ab6-6042-4827-a5ab-7b1a6c3622a2.png)
 
 1.互斥锁 unique_lock 是针对哪里的？
 互斥量加锁为了保证**条件变化**的同步性，条件是可读写变化的，需要用上锁控制单一时间访问，然后再判断condition，如果不通过（false）则释放锁，阻塞休眠，为了其他共享cv的线程做唤醒检测；

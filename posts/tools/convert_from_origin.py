@@ -10,13 +10,13 @@ def download_image(url, output_folder):
 
     if os.path.exists(output_path):
         print(f"Image '{filename}' already exists. Skipping download.")
-        return f"images/{filename}"
+        return f"../images/{filename}"
 
     response = requests.get(url)
     if response.status_code == 200:
         with open(output_path, 'wb') as file:
             file.write(response.content)
-        return f"images/{filename}"
+        return f"../images/{filename}"
     return None
 
 def create_blog_post(filepath):
@@ -49,7 +49,7 @@ comments: true
         image_links = re.findall(r'!\[.*?\]\((.*?)\)', content)
         for link in image_links:
             if link.startswith('http'):
-                local_path = download_image(link, os.path.join(output_folder, 'images'))
+                local_path = download_image(link, os.path.join(output_folder, '..\images'))
                 if local_path:
                     content = content.replace(link, local_path)
 
@@ -60,7 +60,7 @@ comments: true
     print(f"Created new blog post: {new_filename}")
 
 def process_directory(directory):
-    os.makedirs("output/images", exist_ok=True)
+    os.makedirs("output/../images", exist_ok=True)
 
     for root, _, files in os.walk(directory):
         for file in files:
