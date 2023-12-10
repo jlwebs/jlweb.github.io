@@ -1,9 +1,7 @@
 ---
 title: 程序设计练习 KFC点餐 CreatePattern应用
 tag:
-- homework
-- kfc
-- creational pattern
+- 🤐历史
 layout: post
 comments: true
 ---

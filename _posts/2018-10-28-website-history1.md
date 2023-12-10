@@ -1,10 +1,7 @@
 ---
 title: 网站点滴1
 tag:
-- 历史
-- 杂谈
-- jemoji
-- ruby
+- 🤐历史
 layout: post
 comments: true
 excerpt: |-

@@ -2,9 +2,8 @@
 title: gWSL2+Vnc一键访问ubuntu桌面
 feature: http://jlwebs.github.io/img/230822-1.png
 tag:
-- 运维
-- WSL
-- shell
+- 🤐历史/WSL
+- 🤐历史
 file: http://jlwebs.github.io/img/230822-1.png
 layout: post
 ---
@@ -46,7 +45,7 @@ xfconfd &
 xfwm4 &
 ```
 
-11. 去掉一般用户sudo密码输入要求
+1.  去掉一般用户sudo密码输入要求
 
 ` sudo vim /etc/sudoers.d/你的用户名 `<br /> 改为` dexter ALL=(ALL) NOPASSWD: ALL`, 执行sudo命令输入密码的了
 
