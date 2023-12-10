@@ -3,7 +3,7 @@ layout: post
 title: Wechat - Library Fate
 date: '2018-04-22T00:00:00.000Z'
 excerpt: 来一次说干就干的微信小程序吧——莱布瑞之缘（Library Fate）
-tags: 微信 小程序 library Fate
+tags: 🤐历史
 feature: 'http://jlwebs.github.io/img/5.jpg'
 categories: ''
 ---
